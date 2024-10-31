@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter.AddCounterPage"
+             Title="Add counter page">
+    <VerticalStackLayout Padding="20" BackgroundColor="Black">
+        <Label Text="Enter initial value:" FontSize="20" Margin="10" HorizontalOptions="Center" TextColor="White"/>
+        <Entry x:Name="InitialValueEntry" Placeholder="0" Keyboard="Numeric" Margin="10" HorizontalOptions="Center" WidthRequest="100"/>
+        <Label Text="Pick color:" FontSize="20" Margin="10" HorizontalOptions="Center" TextColor="White"/>
+        <Picker x:Name="ColorPicker" Margin="10" FontSize="16" HorizontalOptions="Center" WidthRequest="100">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Red</x:String>
+                    <x:String>Green</x:String>
+                    <x:String>Blue</x:String>
+                    <x:String>Yellow</x:String>
+                    <x:String>Orange</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Button Text="OK" Clicked="OnOKClicked" Margin="10" HorizontalOptions="Center" WidthRequest="80"/>
+        <Button Text="Cancel" Clicked="OnCancelClicked" Margin="10" HorizontalOptions="Center" WidthRequest="80"/>
+    </VerticalStackLayout>
+</ContentPage>

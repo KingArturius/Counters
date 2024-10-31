@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter.CounterModel">
+    <StackLayout x:Name="CounterLayout" Padding="10" Orientation="Vertical" Spacing="10">
+        <Label x:Name="NameLabel" FontSize="18" HorizontalOptions="Center" />
+        <Label x:Name="ValueLabel" FontSize="24" HorizontalOptions="Center" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+            <Button x:Name="MinusButton" Text="-" WidthRequest="50" FontSize="20" HeightRequest="50"/>
+            <Button x:Name="PlusButton" Text="+" WidthRequest="50" FontSize="20" HeightRequest="50"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+            <Button x:Name="ResetButton" Text="Reset" WidthRequest="80" HeightRequest="50"/>
+            <Button x:Name="DeleteButton" Text="Delete" WidthRequest="80" HeightRequest="50"/>
+        </StackLayout>
+    </StackLayout>
+</ContentView>
